@@ -1,0 +1,12 @@
+{
+  "name": "future-home-app",
+  "version": "1.0.0",
+  "description": "A electron wrapper for future home app",
+  "main": "index.js",
+  "author": "Thomas Tvedt <thomas@gulost.net>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "electron": "^1.7.10"
+  }
+}
