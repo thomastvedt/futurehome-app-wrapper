@@ -1,7 +1,7 @@
 {
-  "name": "future-home-app",
+  "name": "future-home-app-wrapper",
   "version": "1.0.0",
-  "description": "A electron wrapper for future home app",
+  "description": "A electron wrapper for Futurehome app",
   "main": "index.js",
   "author": "Thomas Tvedt <thomas@gulost.net>",
   "license": "MIT",
@@ -10,6 +10,18 @@
     "electron": "^1.7.10"
   },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --mac --publish onTag"
+  },
+  "build": {
+    "appId": "futurehome.app.wrapper",
+    "produtName": "Futurehome app wrapper",
+    "mac": {
+      "category": "public.app-category.business",
+      "target": "zip",
+      "icon": "icons/fh-192x192.icns",
+      "type": "development"
+    }
   }
 }
