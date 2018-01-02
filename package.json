@@ -6,22 +6,27 @@
   "author": "Thomas Tvedt <thomas@gulost.net>",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thomastvedt/futurehome-app-wrapper.git"
+  },
   "devDependencies": {
-    "electron": "^1.7.10"
+    "electron": "^1.7.10",
+    "electron-builder": "^19.50.0"
   },
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder --mac --publish onTag"
+    "dist": "electron-builder --mac --publish always"
   },
   "build": {
     "appId": "futurehome.app.wrapper",
-    "produtName": "Futurehome app wrapper",
     "mac": {
       "category": "public.app-category.business",
       "target": "zip",
       "icon": "icons/fh-192x192.icns",
-      "type": "development"
+      "type": "development",
+      "publish": "github"
     }
   }
 }
