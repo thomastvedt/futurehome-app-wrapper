@@ -4,6 +4,8 @@ const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow;
 
+const windowStateKeeper = require('electron-window-state');
+
 const path = require('path');
 const url = require('url');
 
@@ -12,13 +14,20 @@ const url = require('url');
 let mainWindow;
 
 function createWindow () {
+  let mainWindowState = windowStateKeeper({
+    defaultWidth: 375,
+    defaultHeight: 725
+  });
+
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 375,
+    x: mainWindowState.x,
+    y: mainWindowState.y,
+    width: mainWindowState.width,
     minWidth: 300,
-    height: 725,
+    height: mainWindowState.height,
     minHeight: 400,
-    useContentSize: true,
+    useContentSize: false,
     title: 'Futurehome',
     scrollBounce: true,
     backgroundColor: '#425d77',
@@ -26,6 +35,8 @@ function createWindow () {
       nodeIntegration: false
     }
   });
+
+  mainWindowState.manage(mainWindow);
 
   // and load the index.html of the app.
   mainWindow.loadURL('https://futurehome.no/a/dash');
