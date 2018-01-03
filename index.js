@@ -7,8 +7,8 @@ const BrowserWindow = electron.BrowserWindow;
 const windowStateKeeper = require('electron-window-state');
 const path = require('path');
 const url = require('url');
-// const menu = require('menu');
 const { Menu } = require('electron');
+const autoUpdater = require('electron-updater').autoUpdater;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -73,6 +73,10 @@ function createWindow () {
   ];
 
   Menu.setApplicationMenu(Menu.buildFromTemplate(template));
+
+  // This will immediately download an update, then install when the
+  // app quits. (no messages displayed..)
+  autoUpdater.checkForUpdatesAndNotify();
 }
 
 // This method will be called when Electron has finished
