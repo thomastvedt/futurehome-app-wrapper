@@ -1,7 +1,7 @@
 # futurehome-app-wrapper
 A simple electron wrapper around [Futurehome](https://futurehome.no/).
 The Futurehome application is available on iPhone, iPad and Android, but not on macOS.
-The application is also available in a browser on the following url: [https://futurehome.no/a/dash](https://futurehome.no/a/dash)
+The application is also available in a browser on the following url: [https://app.futurehome.no/dashboard](https://app.futurehome.no/dashboard)
 The electron-wrapper enables you to use Futurehome as a "real" application on macOS (and other platforms):
 
 ![screenshot](https://github.com/thomastvedt/futurehome-app-wrapper/blob/master/icons/screen3.png)
