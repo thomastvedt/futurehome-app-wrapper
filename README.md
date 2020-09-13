@@ -4,6 +4,10 @@ The Futurehome application is available on iPhone, iPad and Android, but not on 
 The application is also available in a browser on the following url: [https://app.futurehome.no/dashboard](https://app.futurehome.no/dashboard)
 The electron-wrapper enables you to use Futurehome as a "real" application on macOS (and other platforms):
 
+## New design
+![screenshot](https://github.com/thomastvedt/futurehome-app-wrapper/blob/master/icons/screen4.png)
+
+## Old design 
 ![screenshot](https://github.com/thomastvedt/futurehome-app-wrapper/blob/master/icons/screen3.png)
 
 ![screenshot2](https://github.com/thomastvedt/futurehome-app-wrapper/blob/master/icons/screen2.png)
