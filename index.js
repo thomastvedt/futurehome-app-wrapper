@@ -31,7 +31,7 @@ function createWindow () {
     useContentSize: false,
     title: 'Futurehome',
     scrollBounce: true,
-    backgroundColor: '#425d77',
+    backgroundColor: '#f7f7f7', // '#425d77',
     webPreferences: {
       nodeIntegration: false
     }
@@ -40,7 +40,7 @@ function createWindow () {
   mainWindowState.manage(mainWindow);
 
   // and load the index.html of the app.
-  mainWindow.loadURL('https://futurehome.no/a/dash');
+  mainWindow.loadURL('https://app.futurehome.no/dashboard');
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

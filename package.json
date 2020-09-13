@@ -1,6 +1,6 @@
 {
   "name": "future-home-app-wrapper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A electron wrapper for Futurehome app",
   "main": "index.js",
   "author": "Thomas Tvedt <thomas@gulost.net>",
@@ -11,8 +11,8 @@
     "url": "https://github.com/thomastvedt/futurehome-app-wrapper.git"
   },
   "devDependencies": {
-    "electron": "^1.7.10",
-    "electron-builder": "^19.50.0"
+    "electron": "^10.1.1",
+    "electron-builder": "^22.8.0"
   },
   "scripts": {
     "start": "electron .",
@@ -29,7 +29,7 @@
     }
   },
   "dependencies": {
-    "electron-updater": "^2.18.0",
-    "electron-window-state": "^4.1.1"
+    "electron-updater": "^4.3.4",
+    "electron-window-state": "^5.0.3"
   }
 }
