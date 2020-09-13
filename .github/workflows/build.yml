@@ -4,13 +4,7 @@ on: push
 
 jobs:
   release:
-    runs-on: ${{ matrix.os }}
-    # runs-on: ubuntu-latest
-
-    # TODO: enable build for other platforms if needed?
-    strategy:
-      matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: macos-latest
 
     steps:
       - name: Check out Git repository
