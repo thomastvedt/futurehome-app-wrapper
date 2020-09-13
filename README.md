@@ -6,8 +6,13 @@ The electron-wrapper enables you to use Futurehome as a "real" application on ma
 
 <img src="https://github.com/thomastvedt/futurehome-app-wrapper/blob/master/icons/screen4.png" width="300">
 
-## Download
-Download latest Mac-version [here](https://github.com/thomastvedt/futurehome-app-wrapper/releases/latest)
+## Download and install
+- Download latest Mac-version [here](https://github.com/thomastvedt/futurehome-app-wrapper/releases/latest)
+- Extract .zip file
+- Move executable yo applications
+- Start application
+
+ps. I didn't sign or notarize the app..
 
 ## Publish new releases
 Github action is configured to build a new release when new tags are pushed to master
