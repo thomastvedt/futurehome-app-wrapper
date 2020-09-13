@@ -25,7 +25,8 @@
       "target": "zip",
       "icon": "icons/fh-192x192.icns",
       "type": "development",
-      "publish": "github"
+      "publish": "github",
+	  "hardenedRuntime": true
     }
   },
   "dependencies": {
