@@ -14,6 +14,12 @@ The electron-wrapper enables you to use Futurehome as a "real" application on ma
 
 ps. I didn't sign or notarize the app..
 
+## Dev
+```shell
+yarn install
+yarn run start
+```
+
 ## Publish new releases
 Github action is configured to build a new release when new tags are pushed to master
 
