@@ -11,7 +11,7 @@
     "url": "https://github.com/thomastvedt/futurehome-app-wrapper.git"
   },
   "devDependencies": {
-    "electron": "^10.2.0",
+    "electron": "^13.6.6",
     "electron-builder": "^22.8.0"
   },
   "scripts": {
